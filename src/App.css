@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 2.313rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*------------------------------
+Menu Button Styles
+------------------------------*/
+.menu-btn {
+	all: unset;
+	background-color: unset;
+	border: unset;
+	position: fixed;
+	right: 2.313rem;
+	top:2.313rem;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3.25rem;
+	height: 3.25rem;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+}
+.menu-btn:focus {
+	outline: 1px solid white;
+}
+.menu-btn_burger {
+	width: 2rem;
+	height: 2px;
+	background: white;
+	transition: all .1s ease-in-out;
+	border-radius: .5rem;
+}
+.menu-btn_burger::before, .menu-btn_burger::after {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2px;
+	background: white;
+	transition: all .1s ease-in-out;
+	border-radius: .5rem;
+}
+.menu-btn_burger::before {
+    transform: translateY(-.75rem);
+    transform-origin: left, top;
+}  
+.menu-btn_burger::after {
+    transform: translateY(.75rem);
+    transform-origin: left, bottom;
+	width: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*------------------------------
+Border Styles
+------------------------------*/
+#border-top {
+	height: 0.188rem;
+	background: white;
+	box-sizing: border-box;
+	position: absolute;
+	margin: 0;
+	top: 1.063rem;
+	left: 1.063rem;
+	z-index: 50;
+	width: calc(100% - 34px);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#border-bottom {
+	height: 0.188rem;
+	background: white;
+	box-sizing: border-box;
+	position: absolute;
+	margin: 0;
+	bottom: 1.063rem;
+	left: 1.063rem;
+	z-index: 50;
+	width: calc(100% - 34px);
 }
-
-.App-link {
-  color: #61dafb;
+#border-left {
+	width: 0.188rem;
+	background: white;
+	box-sizing: border-box;
+	position: absolute;
+	margin: 0;
+	top: 1.063rem;
+	left: 1.063rem;
+	z-index: 50;
+	height: calc(100% - 34px);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#border-right {
+	width: 0.188rem;
+	background: white;
+	box-sizing: border-box;
+	position: absolute;
+	margin: 0;
+	top: 1.063rem;
+	right: 1.063rem;
+	z-index: 50;
+	height: calc(100% - 34px);
 }
