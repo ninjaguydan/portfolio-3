@@ -4,6 +4,7 @@
 	--gray1: #121212;
 	--gray2: #282828;
 	--gray3: #C8C8C8;
+	box-sizing: border-box;
 }
 body {
 	margin: 0;
