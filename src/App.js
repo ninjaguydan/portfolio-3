@@ -4,6 +4,8 @@ import Frame from './Components/Frame';
 import Logo from './Components/Logo';
 import MenuBtn from './Components/MenuBtn';
 import Project from './Components/Project';
+import Illustration from './Components/Illustration';
+import About from './Components/About';
 //Mockups
 import dexapp from './media/mockups/Dexapp.png'
 import ng from './media/mockups/NG.png'
@@ -30,6 +32,8 @@ function App() {
 			<Project bg="null" title="Ninja Gold" image={ng} icons={[py, django, jquery]} desc={descriptions.ninja} project_link="https://ninja-gold-dt.herokuapp.com/" code="https://github.com/ninjaguydan/ninja-gold" />
 			<Project bg="gray" title="African American Research Collaborative" image={aarc} icons={[wp, jquery]} desc={descriptions.aarc} project_link="https://africanamericanresearch.us/" code={null} />
 			<Project bg="null" title="Portfolio Site" image={dt} icons={[react]} desc={descriptions.dt} project_link="/" code="https://github.com/ninjaguydan/portfolio-3" />
+			<Illustration />
+			<About />
 			<Frame />
 		</>
 	);
