@@ -378,6 +378,20 @@ Border Styles
 	.btn {
 		width: 50%;
 	}
+	/*------------------------------
+	Illustration Gallery Styles
+	------------------------------*/
+	article .img-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	/*------------------------------
+	About Styles
+	------------------------------*/
+	.about-txt-btn .btn-container {
+		width: 100%;
+		/* max-width: 24.188rem; */
+		justify-content: center;
+	}
 }
 /*==============================================================
 1080px Break Point
@@ -403,6 +417,10 @@ Border Styles
 		justify-content: space-between;
 		max-width: 68.438rem;
 		margin: 0 auto;
+		column-gap: 1rem;
+	}
+	.content img:first-child {
+		height: fit-content;
 	}
 	.desc {
 		width: 40%;
@@ -410,6 +428,7 @@ Border Styles
 	}
 	article img {
 		max-width: 41.375rem;
+		margin: 0;
 	}
 	article h3 {
 		max-width: 68.438rem;
@@ -425,11 +444,47 @@ Border Styles
 	------------------------------*/
 	.btn-container {
 		flex-direction: column;
-		width: 40%;
-		max-width: 24.188rem;
+		width: 100%;
+		max-width: 68.438rem;
+		margin: 2rem auto 0 auto;
 	}
 	.btn {
 		width: 100%;
 	}
-	
+	/*------------------------------
+	Illustration Gallery Styles
+	------------------------------*/
+	article .img-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		max-width: 68.438rem;
+		margin: 0 auto;
+	}
+	/*------------------------------
+	About Styles
+	------------------------------*/
+	.about-img {
+		margin-top: 1.5rem;
+		margin-right: 3rem;
+	}
+	.about-content {
+		display: flex;
+		max-width: 68.438rem;
+		margin: 0 auto;
+	}
+	.about-txt-btn .btn-container {
+		width: 40%;
+		max-width: 24.188rem;
+		margin: 2rem 0 0 0;
+	}
+	/*------------------------------
+	Contact Styles
+	------------------------------*/
+	.contact-info {
+		display: flex;
+		max-width: 68.438rem;
+		margin: 0 auto;
+	}
+	.info {
+		margin-right: 5rem;
+	}
 }

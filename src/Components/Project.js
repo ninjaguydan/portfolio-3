@@ -32,11 +32,11 @@ const Feature = (props) => {
 						})}
 					</div>
 					<p>{props.desc}</p>
+					<div className="btn-container">
+						<a href={props.project_link} className="btn btn-primary" target="_blank">Live Project</a>
+						{ props.code && <a href={props.code} className="btn btn-secondary" target="_blank">View Code</a> }
+					</div>
 				</div>
-			</div>
-			<div className="btn-container">
-				<a href={props.project_link} className="btn btn-primary" target="_blank">Live Project</a>
-				{ props.code && <a href={props.code} className="btn btn-secondary" target="_blank">View Code</a> }
 			</div>
 		</article>
 	)
