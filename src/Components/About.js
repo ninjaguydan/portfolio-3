@@ -3,7 +3,7 @@ import resume from "../media/download/daniel_thompson_resume_v14.pdf"
 
 const About = () => {
 	return (
-		<article>
+		<article id="about">
 			<h3>About</h3>
 			<img src={me} alt="daniel signing artwork" className="about-img" />
 			<p>

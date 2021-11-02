@@ -1,4 +1,5 @@
 import './css/App.css';
+import { useState } from 'react';
 //Components
 import Frame from './Components/Frame';
 import Logo from './Components/Logo';
@@ -6,6 +7,8 @@ import MenuBtn from './Components/MenuBtn';
 import Project from './Components/Project';
 import Illustration from './Components/Illustration';
 import About from './Components/About';
+import Contact from './Components/Contact';
+import Menu from './Components/Menu';
 //Mockups
 import dexapp from './media/mockups/Dexapp.png'
 import ng from './media/mockups/NG.png'
@@ -19,12 +22,19 @@ import jquery from './media/icons/jquery.svg'
 import wp from './media/icons/wordpress.svg'
 
 function App() {
+
+	const [isActive, setActive] = useState('false')
+	function menuToggle() {
+		setActive(!isActive)
+	}
+
 	return (
 		<>
-			<MenuBtn />
+			<MenuBtn menuToggle={menuToggle} isActive={isActive} />
+			<Menu isActive={isActive} menuToggle={menuToggle} />
 			<Logo />
 			<section className="gray nav" />
-			<header>
+			<header id="projects">
 				<h1>Daniel Thompson</h1>
 				<h2>User Interface Engineer &#9733; Designer</h2>
 			</header>
@@ -34,6 +44,7 @@ function App() {
 			<Project bg="null" title="Portfolio Site" image={dt} icons={[react]} desc={descriptions.dt} project_link="/" code="https://github.com/ninjaguydan/portfolio-3" />
 			<Illustration />
 			<About />
+			<Contact />
 			<Frame />
 		</>
 	);

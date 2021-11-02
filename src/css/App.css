@@ -1,6 +1,9 @@
 /*------------------------------
 Universal Styles
 ------------------------------*/
+html {
+	scroll-behavior: smooth;
+}
 body {
 	/* padding: 2.313rem; */
 	color: white;
@@ -103,7 +106,37 @@ Menu Button Styles
 	transform: rotate(-45deg);
 	width: 2rem;
 }
-
+/*------------------------------
+Menu Styles
+------------------------------*/
+nav {
+	position: fixed;
+	background-color: var(--gray2);
+	width: 100%;
+	padding: 2.313rem 3.5rem 1rem 3.5rem;
+	z-index: 9;
+	border-bottom: 1px solid #1b1b1b;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	padding: 1rem 0;
+}
+nav li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 100%;
+}
+nav li a:hover, nav li a:focus {
+	color: var(--primary);
+}
+nav.hidden {
+	display: none;
+}
 /*------------------------------
 Feature Styles
 ------------------------------*/
@@ -170,6 +203,39 @@ p a:hover {
 	color:#6969a4
 }
 /*------------------------------
+Contact Styles
+------------------------------*/
+article.contact {
+	background-color: var(--primary);
+}
+.contact h3 {
+	color: white;
+}
+.info {
+	margin-top:2rem;
+}
+.info h4 {
+	font-size: 1.25rem;
+	margin: 0;
+	margin-bottom: .75rem;
+}
+.info p {
+	margin: 0;
+	color: white;
+}
+.info .icons a {
+	width: 2rem;
+	margin-right: 1rem;
+	transition: transform .2s;
+}
+.info .icons a:hover, .info .icons a:focus {
+	transform: scale(1.0625);	
+}
+.info .icons img {
+	width: 100%;
+	margin: 0;
+}
+/*------------------------------
 Button Styles
 ------------------------------*/
 .btn-container {
@@ -207,7 +273,6 @@ Button Styles
 .btn-secondary:hover {
 	background-color: #414141;
 }
-
 /*------------------------------
 Border Styles
 ------------------------------*/
@@ -254,4 +319,117 @@ Border Styles
 	right: 1.063rem;
 	z-index: 50;
 	height: calc(100% - 34px);
+}
+
+/*==============================================================
+600px Break Point
+==============================================================*/
+@media only screen and (min-width: 600px) {
+	/*------------------------------
+	Universal Styles
+	------------------------------*/
+	h1 {
+		font-size: 2rem;
+		margin-top: 0;
+	}
+	h2 {
+		font-size: 1.18rem;
+		font-weight: 500;
+		color: var(--primary);
+	}
+	header {
+		padding: 1.5rem 2.313rem 1.5rem 13.5rem;
+		text-align: left;
+	}
+	.nav {
+		height: 6.5rem;
+	}
+	/*------------------------------
+	Main Logo Styles
+	------------------------------*/
+	#dt-anim {
+		width: 8.5rem;
+		height: 8.5rem;
+		left: 3.5rem;
+		padding: .5rem;
+		transform: translateX(0%);
+		border: .35rem solid var(--gray2);
+	}
+	/*------------------------------
+	Feature Styles
+	------------------------------*/
+	article h3 {
+		font-size: 2rem;
+	}
+	article p {
+		font-size: 1.25rem;
+		line-height: 2rem;
+	}
+	/*------------------------------
+	Button Styles
+	------------------------------*/
+	.btn-container {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: row;
+		column-gap: 1rem;
+		width: 75%;
+	}
+	.btn {
+		width: 50%;
+	}
+}
+/*==============================================================
+1080px Break Point
+==============================================================*/
+@media only screen and (min-width:1080px) {
+	/*------------------------------
+	Menu Styles
+	------------------------------*/
+	nav {
+		width: 100%;
+	}
+	nav ul {
+		display: flex;
+		width: 25rem;
+		justify-content: space-between;
+	}
+	/*------------------------------
+	Feature Styles
+	------------------------------*/
+	.content {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		max-width: 68.438rem;
+		margin: 0 auto;
+	}
+	.desc {
+		width: 40%;
+		max-width: 24.188rem;
+	}
+	article img {
+		max-width: 41.375rem;
+	}
+	article h3 {
+		max-width: 68.438rem;
+		margin: 0 auto 2rem auto;
+	}
+	article p {
+		font-size: 1.15rem;
+		color: var(--gray3);
+		line-height: 1.75rem;
+	}
+	/*------------------------------
+	Button Styles
+	------------------------------*/
+	.btn-container {
+		flex-direction: column;
+		width: 40%;
+		max-width: 24.188rem;
+	}
+	.btn {
+		width: 100%;
+	}
+	
 }
