@@ -98,11 +98,11 @@ Menu Button Styles
 	background: transparent;
 }
 .menu-btn.open .menu-btn_burger::before {
-	background-color: var(--primary);
+	background-color: #404078;
 	transform: rotate(45deg);
 }
 .menu-btn.open .menu-btn_burger::after {
-	background-color: var(--primary);
+	background-color: #404078;
 	transform: rotate(-45deg);
 	width: 2rem;
 }
@@ -111,11 +111,11 @@ Menu Styles
 ------------------------------*/
 nav {
 	position: fixed;
-	background-color: var(--gray2);
+	background-color: var(--primary);
 	width: 100%;
 	padding: 2.313rem 3.5rem 1rem 3.5rem;
 	z-index: 9;
-	border-bottom: 1px solid #1b1b1b;
+	animation: menu-overlay .3s forwards;
 }
 nav ul {
 	list-style: none;
@@ -132,7 +132,7 @@ nav li a {
 	width: 100%;
 }
 nav li a:hover, nav li a:focus {
-	color: var(--primary);
+	color: #404078;
 }
 nav.hidden {
 	display: none;
@@ -155,9 +155,9 @@ article h3 {
 	margin-top: 0;
 }
 article p {
-	font-size: 1.15rem;
 	color: var(--gray3);
-	line-height: 1.75rem;
+	font-size:0.875rem;
+	line-height: 1.5rem;
 }
 .icons {
 	display: flex;
@@ -247,10 +247,10 @@ Button Styles
 	color: white;
 	text-decoration: none;
 	text-align: center;
-	font-size: 1rem;
+	font-size:0.875rem;
 	font-weight: 500;
 	width: 100%;
-	padding: .75rem;
+	padding: .5rem;
 	margin-bottom: 1.5rem;
 	border: 1.5px solid;
 	border-radius: 2.5rem;
@@ -320,7 +320,19 @@ Border Styles
 	z-index: 50;
 	height: calc(100% - 34px);
 }
-
+/*------------------------------
+Animation
+------------------------------*/
+@keyframes menu-overlay {
+    from {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /*==============================================================
 600px Break Point
 ==============================================================*/
@@ -359,11 +371,12 @@ Border Styles
 	Feature Styles
 	------------------------------*/
 	article h3 {
-		font-size: 2rem;
+		max-width:  36.188rem;
+		margin: 0 auto 2rem auto;
 	}
-	article p {
-		font-size: 1.25rem;
-		line-height: 2rem;
+	.content {
+		max-width: 36.188rem;
+		margin: 0 auto;
 	}
 	/*------------------------------
 	Button Styles
@@ -377,12 +390,15 @@ Border Styles
 	}
 	.btn {
 		width: 50%;
+		max-width: 10.625rem;
 	}
 	/*------------------------------
 	Illustration Gallery Styles
 	------------------------------*/
 	article .img-grid {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		max-width: 36.188rem;
+		margin: 0 auto;
 	}
 	/*------------------------------
 	About Styles
@@ -391,6 +407,21 @@ Border Styles
 		width: 100%;
 		/* max-width: 24.188rem; */
 		justify-content: center;
+	}
+	.about-content {
+		max-width: 36.188rem;
+		margin: 0 auto;
+	}
+	/*------------------------------
+	Contact Styles
+	------------------------------*/
+	.contact-info {
+		display: flex;
+		max-width: 36.188rem;
+		margin: 0 auto;
+	}
+	.info {
+		margin-right: 5rem;
 	}
 }
 /*==============================================================
@@ -435,21 +466,17 @@ Border Styles
 		margin: 0 auto 2rem auto;
 	}
 	article p {
-		font-size: 1.15rem;
-		color: var(--gray3);
-		line-height: 1.75rem;
+		font-size: 1rem;
+		line-height: 1.55rem;
 	}
 	/*------------------------------
 	Button Styles
 	------------------------------*/
 	.btn-container {
-		flex-direction: column;
+		/* flex-direction: column; */
 		width: 100%;
 		max-width: 68.438rem;
 		margin: 2rem auto 0 auto;
-	}
-	.btn {
-		width: 100%;
 	}
 	/*------------------------------
 	Illustration Gallery Styles
@@ -471,20 +498,20 @@ Border Styles
 		max-width: 68.438rem;
 		margin: 0 auto;
 	}
+	.about-txt {
+		width: 95%;
+	}
 	.about-txt-btn .btn-container {
 		width: 40%;
 		max-width: 24.188rem;
+		justify-content: flex-start;
 		margin: 2rem 0 0 0;
 	}
 	/*------------------------------
 	Contact Styles
 	------------------------------*/
 	.contact-info {
-		display: flex;
 		max-width: 68.438rem;
 		margin: 0 auto;
-	}
-	.info {
-		margin-right: 5rem;
 	}
 }
