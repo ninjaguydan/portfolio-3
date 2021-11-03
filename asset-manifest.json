@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio-3/static/css/main.bb302671.chunk.css",
-    "main.js": "/portfolio-3/static/js/main.fda74180.chunk.js",
-    "main.js.map": "/portfolio-3/static/js/main.fda74180.chunk.js.map",
+    "main.css": "/portfolio-3/static/css/main.fe76e937.chunk.css",
+    "main.js": "/portfolio-3/static/js/main.375ee115.chunk.js",
+    "main.js.map": "/portfolio-3/static/js/main.375ee115.chunk.js.map",
     "runtime-main.js": "/portfolio-3/static/js/runtime-main.4c32e53d.js",
     "runtime-main.js.map": "/portfolio-3/static/js/runtime-main.4c32e53d.js.map",
     "static/js/2.bff8e4f4.chunk.js": "/portfolio-3/static/js/2.bff8e4f4.chunk.js",
     "static/js/2.bff8e4f4.chunk.js.map": "/portfolio-3/static/js/2.bff8e4f4.chunk.js.map",
     "index.html": "/portfolio-3/index.html",
-    "static/css/main.bb302671.chunk.css.map": "/portfolio-3/static/css/main.bb302671.chunk.css.map",
+    "static/css/main.fe76e937.chunk.css.map": "/portfolio-3/static/css/main.fe76e937.chunk.css.map",
     "static/js/2.bff8e4f4.chunk.js.LICENSE.txt": "/portfolio-3/static/js/2.bff8e4f4.chunk.js.LICENSE.txt",
     "static/media/0_dp.11319d5b.png": "/portfolio-3/static/media/0_dp.11319d5b.png",
     "static/media/10_ab.058342ab.png": "/portfolio-3/static/media/10_ab.058342ab.png",
@@ -26,7 +26,7 @@
     "static/media/DT.ec121654.png": "/portfolio-3/static/media/DT.ec121654.png",
     "static/media/Dexapp.97f00432.png": "/portfolio-3/static/media/Dexapp.97f00432.png",
     "static/media/NG.68de354c.png": "/portfolio-3/static/media/NG.68de354c.png",
-    "static/media/daniel_thompson_resume_v14.14d48889.pdf": "/portfolio-3/static/media/daniel_thompson_resume_v14.14d48889.pdf",
+    "static/media/daniel_thompson_resume_v14.72022bd1.pdf": "/portfolio-3/static/media/daniel_thompson_resume_v14.72022bd1.pdf",
     "static/media/django.98bc11bd.svg": "/portfolio-3/static/media/django.98bc11bd.svg",
     "static/media/dt_logo.3fa909c2.svg": "/portfolio-3/static/media/dt_logo.3fa909c2.svg",
     "static/media/gh.de36b096.svg": "/portfolio-3/static/media/gh.de36b096.svg",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.4c32e53d.js",
     "static/js/2.bff8e4f4.chunk.js",
-    "static/css/main.bb302671.chunk.css",
-    "static/js/main.fda74180.chunk.js"
+    "static/css/main.fe76e937.chunk.css",
+    "static/js/main.375ee115.chunk.js"
   ]
 }
