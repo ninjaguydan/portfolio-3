@@ -57,7 +57,7 @@ let descriptions = {
 	"ninja" : "A simple, luck-based game built with Python. It's basically blackjack on steroids. All backend and frontend/ graphic design done by me. Check out the live project, and try to get 100 coins in 10 turns without going over!",
 	"aarc" : "Made for a client committed to bringing an accurate understanding of African American civic engagement to the public discourse.",
 	"dt" : "My fifth attempt at building a portfolio site, this time done completely with React.js. No backend needed for this project, but once again all front end and graphic design done by me!",
-	"ct" : "An online tool to track and analyze potential target companies and their financial growth. Desgined by me",
+	"ct" : "A tool that allows users to track and analyze potential target companies. View, edit, create or delete existing targets, and choose whether to view your data in light or darkmode! Desgined and developed by me.",
 }
 
 export default App;
