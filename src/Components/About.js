@@ -1,5 +1,5 @@
 import me from "../media/images/me.png"
-import resume from "../media/download/daniel_thompson_resume_v14.pdf"
+import resume from "../media/download/daniel_thompson_resume_v15.pdf"
 
 const About = () => {
 	return (
