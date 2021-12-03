@@ -14,6 +14,7 @@ import dexapp from './media/mockups/Dexapp.png'
 import ng from './media/mockups/NG.png'
 import aarc from './media/mockups/AARC.png'
 import dt from './media/mockups/DT.png'
+import ct from './media/mockups/CT.png'
 //Icons
 import react from './media/icons/react.svg'
 import py from './media/icons/python.svg'
@@ -42,6 +43,7 @@ function App() {
 			<Project bg="null" title="Ninja Gold" image={ng} icons={[py, django, jquery]} desc={descriptions.ninja} project_link="https://ninja-gold-dt.herokuapp.com/" code="https://github.com/ninjaguydan/ninja-gold" />
 			<Project bg="gray" title="African American Research Collaborative" image={aarc} icons={[wp, jquery]} desc={descriptions.aarc} project_link="https://africanamericanresearch.us/" code={null} />
 			<Project bg="null" title="Portfolio Site" image={dt} icons={[react]} desc={descriptions.dt} project_link="/" code="https://github.com/ninjaguydan/portfolio-3" />
+			<Project bg="gray" title="Company Tracker" image={ct} icons={[react]} desc={descriptions.ct} project_link="https://ninjaguydan.github.io/company_tracker/" code="https://github.com/ninjaguydan/company_tracker" />
 			<Illustration />
 			<About />
 			<Contact />
@@ -55,6 +57,7 @@ let descriptions = {
 	"ninja" : "A simple, luck-based game built with Python. It's basically blackjack on steroids. All backend and frontend/ graphic design done by me. Check out the live project, and try to get 100 coins in 10 turns without going over!",
 	"aarc" : "Made for a client committed to bringing an accurate understanding of African American civic engagement to the public discourse.",
 	"dt" : "My fifth attempt at building a portfolio site, this time done completely with React.js. No backend needed for this project, but once again all front end and graphic design done by me!",
+	"ct" : "An online tool to track and analyze potential target companies and their financial growth. Desgined by me",
 }
 
 export default App;

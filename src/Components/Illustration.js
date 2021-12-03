@@ -13,7 +13,7 @@ import js from '../media/images/11_js.png'
 
 const Illustration = () => {
 	return (
-		<article className="gray" id="art">
+		<article className={null} id="art">
 			<h3>Illustration</h3>
 			<div className="img-grid">
 				<a href="https://www.instagram.com/p/By_EHnNhbdC/" target="_blank"><img src={dp} alt="dealpool illustration" /></a>
