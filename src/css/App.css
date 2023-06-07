@@ -27,6 +27,9 @@ header {
 .nav {
   height: 9rem;
 }
+.gray {
+  background-color: var(--gray2);
+}
 /*------------------------------
 Main Logo Styles
 ------------------------------*/
