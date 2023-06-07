@@ -2,516 +2,521 @@
 Universal Styles
 ------------------------------*/
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-	/* padding: 2.313rem; */
-	color: white;
+  /* padding: 2.313rem; */
+  color: white;
 }
 h1 {
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 1.5rem;
-	margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 h2 {
-	margin-top: 5px;
-	font-size: 0.9rem;
-	font-weight: 500;
-	color: var(--primary);
+  margin-top: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary);
 }
 header {
-	padding: 5.5rem 2.313rem 1.5rem;
-	text-align: center;
-}
-.gray {
-	background-color: var(--gray2);
+  padding: 5.5rem 2.313rem 1.5rem;
+  text-align: center;
 }
 .nav {
-	height: 9rem;
+  height: 9rem;
 }
 /*------------------------------
 Main Logo Styles
 ------------------------------*/
 #dt-anim {
-	z-index: 2;
-	width: 7.75rem;
-	height: 7.75rem;
-	position: absolute;
-	left: 50%;
-	top: 5rem;
-	padding: .5rem;
-	transform: translateX(-50%);
-	background-color: var(--gray1);
-	border: .25rem solid var(--gray2);
-	border-radius: 50%;
+  z-index: 2;
+  width: 7.75rem;
+  height: 7.75rem;
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  padding: 0.5rem;
+  transform: translateX(-50%);
+  background-color: var(--gray1);
+  border: 0.25rem solid var(--gray2);
+  border-radius: 50%;
 }
 /*------------------------------
 Menu Button Styles
 ------------------------------*/
 .menu-btn {
-	all: unset;
-	background-color: unset;
-	border: unset;
-	position: fixed;
-	right: 2.313rem;
-	top:2.313rem;
-	z-index: 10;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 3.25rem;
-	height: 3.25rem;
-	cursor: pointer;
-	transition: all .1s ease-in-out;
+  all: unset;
+  background-color: unset;
+  border: unset;
+  position: fixed;
+  right: 2.313rem;
+  top: 2.313rem;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 .menu-btn:focus {
-	outline: 1px solid white;
+  outline: 1px solid white;
 }
 .menu-btn_burger {
-	width: 2rem;
-	height: 2px;
-	background: white;
-	transition: all .1s ease-in-out;
-	border-radius: .5rem;
+  width: 2rem;
+  height: 2px;
+  background: white;
+  transition: all 0.1s ease-in-out;
+  border-radius: 0.5rem;
 }
-.menu-btn_burger::before, .menu-btn_burger::after {
-	content: '';
-	position: absolute;
-	width: 2rem;
-	height: 2px;
-	background: white;
-	transition: all .1s ease-in-out;
-	border-radius: .5rem;
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2px;
+  background: white;
+  transition: all 0.1s ease-in-out;
+  border-radius: 0.5rem;
 }
 .menu-btn_burger::before {
-	transform: translateY(-.75rem);
-	transform-origin: left, top;
-}  
+  transform: translateY(-0.75rem);
+  transform-origin: left, top;
+}
 .menu-btn_burger::after {
-	transform: translateY(.75rem);
-	transform-origin: left, bottom;
-	width: 1.5rem;
-	right: 10px;
+  transform: translateY(0.75rem);
+  transform-origin: left, bottom;
+  width: 1.5rem;
+  right: 10px;
 }
 .menu-btn.open .menu-btn_burger {
-	background: transparent;
+  background: transparent;
 }
 .menu-btn.open .menu-btn_burger::before {
-	background-color: #404078;
-	transform: rotate(45deg);
+  background-color: #404078;
+  transform: rotate(45deg);
 }
 .menu-btn.open .menu-btn_burger::after {
-	background-color: #404078;
-	transform: rotate(-45deg);
-	width: 2rem;
+  background-color: #404078;
+  transform: rotate(-45deg);
+  width: 2rem;
 }
 /*------------------------------
 Menu Styles
 ------------------------------*/
 nav {
-	position: fixed;
-	background-color: var(--primary);
-	width: 100%;
-	padding: 2.313rem 3.5rem 1rem 3.5rem;
-	z-index: 9;
-	animation: menu-overlay .3s forwards;
+  position: fixed;
+  background-color: var(--primary);
+  width: 100%;
+  padding: 2.313rem 3.5rem 1rem 3.5rem;
+  z-index: 9;
+  animation: menu-overlay 0.3s forwards;
 }
 nav ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 nav li {
-	padding: 1rem 0;
+  padding: 1rem 0;
 }
 nav li a {
-	text-decoration: none;
-	color: white;
-	display: block;
-	width: 100%;
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
 }
-nav li a:hover, nav li a:focus {
-	color: #404078;
+nav li a:hover,
+nav li a:focus {
+  color: #404078;
 }
 nav.hidden {
-	display: none;
+  display: none;
 }
 /*------------------------------
 Feature Styles
 ------------------------------*/
+.site-content article:nth-child(odd) {
+  background-color: var(--gray2);
+}
 article {
-	padding: 5rem 3.5rem;
+  padding: 5rem 3.5rem;
 }
 article img {
-	width: 100%;
-	margin: 1rem 0;
+  width: 100%;
+  margin: 1rem 0;
 }
 article h3 {
-	text-transform: uppercase;
-	font-size: 1.5rem;
-	font-weight: 700;
-	color: var(--primary);
-	margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 0;
 }
 article p {
-	color: var(--gray3);
-	font-size:0.875rem;
-	line-height: 1.5rem;
+  color: var(--gray3);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 .icons {
-	display: flex;
+  display: flex;
+  gap: 1rem;
 }
 .icons img {
-	width: 1.5rem;
-	margin: 0 .75rem 0 0;
+  height: 1.5rem;
+  width: fit-content;
+  margin: 0;
 }
 /*------------------------------
 Illustration Gallery Styles
 ------------------------------*/
 article .img-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 1rem;
-    row-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 article .img-grid img {
-	margin: 0;
-	filter: grayscale(1);
-	transition: transform .2s;
+  margin: 0;
+  filter: grayscale(1);
+  transition: transform 0.2s;
 }
 article .img-grid img:hover {
-	transform: scale(1.0625);
-	filter: none;
+  transform: scale(1.0625);
+  filter: none;
 }
 /*------------------------------
 About Styles
 ------------------------------*/
 .about-img {
-	width: 9rem;
-	height: 9rem;
-	margin: 3rem auto;
-	display: block;
-	border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+  margin: 3rem auto;
+  display: block;
+  border-radius: 50%;
 }
 p a {
-	text-decoration: none;
-	color: var(--primary);
-	font-weight: 600;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
 }
 p a:hover {
-	color:#6969a4
+  color: #6969a4;
 }
 /*------------------------------
 Contact Styles
 ------------------------------*/
 article.contact {
-	background-color: var(--primary);
+  background-color: var(--primary);
 }
 .contact h3 {
-	color: white;
+  color: white;
 }
 .info {
-	margin-top:2rem;
+  margin-top: 2rem;
 }
 .info h4 {
-	font-size: 1.25rem;
-	margin: 0;
-	margin-bottom: .75rem;
+  font-size: 1.25rem;
+  margin: 0;
+  margin-bottom: 0.75rem;
 }
 .info p {
-	margin: 0;
-	color: white;
+  margin: 0;
+  color: white;
 }
 .info .icons a {
-	width: 2rem;
-	margin-right: 1rem;
-	transition: transform .2s;
+  width: 2rem;
+  margin-right: 1rem;
+  transition: transform 0.2s;
 }
-.info .icons a:hover, .info .icons a:focus {
-	transform: scale(1.0625);	
+.info .icons a:hover,
+.info .icons a:focus {
+  transform: scale(1.0625);
 }
 .info .icons img {
-	width: 100%;
-	margin: 0;
+  width: 100%;
+  margin: 0;
 }
 /*------------------------------
 Button Styles
 ------------------------------*/
 .btn-container {
-	margin-top: 2rem;
-	display: flex;
-	flex-direction: column;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .btn {
-	color: white;
-	text-decoration: none;
-	text-align: center;
-	font-size:0.875rem;
-	font-weight: 500;
-	width: 100%;
-	padding: .5rem;
-	margin-bottom: 1.5rem;
-	border: 1.5px solid;
-	border-radius: 2.5rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 1.5px solid;
+  border-radius: 2.5rem;
 }
 .btn:focus {
-	border-color: #9a9ad4;
-	box-shadow:0 0 0 0.25rem rgb(217 83 255 / 25%);
+  border-color: #9a9ad4;
+  box-shadow: 0 0 0 0.25rem rgb(217 83 255 / 25%);
 }
 .btn-primary {
-	background-color:var(--primary);
-	border-color: var(--primary);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 .btn-primary:hover {
-	background-color: #6969a4;
+  background-color: #6969a4;
 }
 .btn-secondary {
-	background-color: #4d4d4d;
-	border-color: #4d4d4d;
+  background-color: #4d4d4d;
+  border-color: #4d4d4d;
 }
 .btn-secondary:hover {
-	background-color: #414141;
+  background-color: #414141;
 }
 /*------------------------------
 Border Styles
 ------------------------------*/
 #border-top {
-	height: 0.188rem;
-	background: white;
-	box-sizing: border-box;
-	position: absolute;
-	margin: 0;
-	top: 1.063rem;
-	left: 1.063rem;
-	z-index: 50;
-	width: calc(100% - 34px);
+  height: 0.188rem;
+  background: white;
+  box-sizing: border-box;
+  position: absolute;
+  margin: 0;
+  top: 1.063rem;
+  left: 1.063rem;
+  z-index: 50;
+  width: calc(100% - 34px);
 }
 #border-bottom {
-	height: 0.188rem;
-	background: white;
-	box-sizing: border-box;
-	position: absolute;
-	margin: 0;
-	bottom: 1.063rem;
-	left: 1.063rem;
-	z-index: 50;
-	width: calc(100% - 34px);
+  height: 0.188rem;
+  background: white;
+  box-sizing: border-box;
+  position: absolute;
+  margin: 0;
+  bottom: 1.063rem;
+  left: 1.063rem;
+  z-index: 50;
+  width: calc(100% - 34px);
 }
 #border-left {
-	width: 0.188rem;
-	background: white;
-	box-sizing: border-box;
-	position: absolute;
-	margin: 0;
-	top: 1.063rem;
-	left: 1.063rem;
-	z-index: 50;
-	height: calc(100% - 34px);
+  width: 0.188rem;
+  background: white;
+  box-sizing: border-box;
+  position: absolute;
+  margin: 0;
+  top: 1.063rem;
+  left: 1.063rem;
+  z-index: 50;
+  height: calc(100% - 34px);
 }
 #border-right {
-	width: 0.188rem;
-	background: white;
-	box-sizing: border-box;
-	position: absolute;
-	margin: 0;
-	top: 1.063rem;
-	right: 1.063rem;
-	z-index: 50;
-	height: calc(100% - 34px);
+  width: 0.188rem;
+  background: white;
+  box-sizing: border-box;
+  position: absolute;
+  margin: 0;
+  top: 1.063rem;
+  right: 1.063rem;
+  z-index: 50;
+  height: calc(100% - 34px);
 }
 /*------------------------------
 Animation
 ------------------------------*/
 @keyframes menu-overlay {
-    from {
-        opacity: 0;
-        transform: translateY(-300px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /*==============================================================
 600px Break Point
 ==============================================================*/
 @media only screen and (min-width: 600px) {
-	/*------------------------------
+  /*------------------------------
 	Universal Styles
 	------------------------------*/
-	h1 {
-		font-size: 2rem;
-		margin-top: 0;
-	}
-	h2 {
-		font-size: 1.18rem;
-		font-weight: 500;
-		color: var(--primary);
-	}
-	header {
-		padding: 1.5rem 2.313rem 1.5rem 13.5rem;
-		text-align: left;
-	}
-	.nav {
-		height: 6.5rem;
-	}
-	/*------------------------------
+  h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 1.18rem;
+    font-weight: 500;
+    color: var(--primary);
+  }
+  header {
+    padding: 1.5rem 2.313rem 1.5rem 13.5rem;
+    text-align: left;
+  }
+  .nav {
+    height: 6.5rem;
+  }
+  /*------------------------------
 	Main Logo Styles
 	------------------------------*/
-	#dt-anim {
-		width: 8.5rem;
-		height: 8.5rem;
-		left: 3.5rem;
-		padding: .5rem;
-		transform: translateX(0%);
-		border: .35rem solid var(--gray2);
-	}
-	/*------------------------------
+  #dt-anim {
+    width: 8.5rem;
+    height: 8.5rem;
+    left: 3.5rem;
+    padding: 0.5rem;
+    transform: translateX(0%);
+    border: 0.35rem solid var(--gray2);
+  }
+  /*------------------------------
 	Feature Styles
 	------------------------------*/
-	article h3 {
-		max-width:  36.188rem;
-		margin: 0 auto 2rem auto;
-	}
-	.content {
-		max-width: 36.188rem;
-		margin: 0 auto;
-	}
-	/*------------------------------
+  article h3 {
+    max-width: 36.188rem;
+    margin: 0 auto 2rem auto;
+  }
+  .content {
+    max-width: 36.188rem;
+    margin: 0 auto;
+  }
+  /*------------------------------
 	Button Styles
 	------------------------------*/
-	.btn-container {
-		margin-top: 2rem;
-		display: flex;
-		flex-direction: row;
-		column-gap: 1rem;
-		width: 75%;
-	}
-	.btn {
-		width: 50%;
-		max-width: 10.625rem;
-	}
-	/*------------------------------
+  .btn-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    width: 75%;
+  }
+  .btn {
+    width: 50%;
+    max-width: 10.625rem;
+  }
+  /*------------------------------
 	Illustration Gallery Styles
 	------------------------------*/
-	article .img-grid {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		max-width: 36.188rem;
-		margin: 0 auto;
-	}
-	/*------------------------------
+  article .img-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 36.188rem;
+    margin: 0 auto;
+  }
+  /*------------------------------
 	About Styles
 	------------------------------*/
-	.about-txt-btn .btn-container {
-		width: 100%;
-		/* max-width: 24.188rem; */
-		justify-content: center;
-	}
-	.about-content {
-		max-width: 36.188rem;
-		margin: 0 auto;
-	}
-	/*------------------------------
+  .about-txt-btn .btn-container {
+    width: 100%;
+    /* max-width: 24.188rem; */
+    justify-content: center;
+  }
+  .about-content {
+    max-width: 36.188rem;
+    margin: 0 auto;
+  }
+  /*------------------------------
 	Contact Styles
 	------------------------------*/
-	.contact-info {
-		display: flex;
-		max-width: 36.188rem;
-		margin: 0 auto;
-	}
-	.info {
-		margin-right: 5rem;
-	}
+  .contact-info {
+    display: flex;
+    max-width: 36.188rem;
+    margin: 0 auto;
+  }
+  .info {
+    margin-right: 5rem;
+  }
 }
 /*==============================================================
 1080px Break Point
 ==============================================================*/
-@media only screen and (min-width:1080px) {
-	/*------------------------------
+@media only screen and (min-width: 1080px) {
+  /*------------------------------
 	Menu Styles
 	------------------------------*/
-	nav {
-		width: 100%;
-	}
-	nav ul {
-		display: flex;
-		width: 25rem;
-		justify-content: space-between;
-	}
-	/*------------------------------
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
+  }
+  /*------------------------------
 	Feature Styles
 	------------------------------*/
-	.content {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-		max-width: 68.438rem;
-		margin: 0 auto;
-		column-gap: 1rem;
-	}
-	.content img:first-child {
-		height: fit-content;
-	}
-	.desc {
-		width: 40%;
-		max-width: 24.188rem;
-	}
-	article img {
-		max-width: 41.375rem;
-		margin: 0;
-	}
-	article h3 {
-		max-width: 68.438rem;
-		margin: 0 auto 2rem auto;
-	}
-	article p {
-		font-size: 1rem;
-		line-height: 1.55rem;
-	}
-	/*------------------------------
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 68.438rem;
+    margin: 0 auto;
+    column-gap: 1rem;
+  }
+  .content img:first-child {
+    /* height: fit-content; */
+  }
+  .desc {
+    width: 40%;
+    max-width: 24.188rem;
+  }
+  article img {
+    max-width: 41.375rem;
+    margin: 0;
+  }
+  article h3 {
+    max-width: 68.438rem;
+    margin: 0 auto 2rem auto;
+  }
+  article p {
+    font-size: 1rem;
+    line-height: 1.55rem;
+  }
+  /*------------------------------
 	Button Styles
 	------------------------------*/
-	.btn-container {
-		/* flex-direction: column; */
-		width: 100%;
-		max-width: 68.438rem;
-		margin: 2rem auto 0 auto;
-	}
-	/*------------------------------
+  .btn-container {
+    /* flex-direction: column; */
+    width: 100%;
+    max-width: 68.438rem;
+    margin: 2rem auto 0 auto;
+  }
+  /*------------------------------
 	Illustration Gallery Styles
 	------------------------------*/
-	article .img-grid {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		max-width: 68.438rem;
-		margin: 0 auto;
-	}
-	/*------------------------------
+  article .img-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 68.438rem;
+    margin: 0 auto;
+  }
+  /*------------------------------
 	About Styles
 	------------------------------*/
-	.about-img {
-		margin-top: 1.5rem;
-		margin-right: 3rem;
-	}
-	.about-content {
-		display: flex;
-		max-width: 68.438rem;
-		margin: 0 auto;
-	}
-	.about-txt {
-		width: 95%;
-	}
-	.about-txt-btn .btn-container {
-		width: 40%;
-		max-width: 24.188rem;
-		justify-content: flex-start;
-		margin: 2rem 0 0 0;
-	}
-	/*------------------------------
+  .about-img {
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+  }
+  .about-content {
+    display: flex;
+    max-width: 68.438rem;
+    margin: 0 auto;
+  }
+  .about-txt {
+    width: 95%;
+  }
+  .about-txt-btn .btn-container {
+    width: 40%;
+    max-width: 24.188rem;
+    justify-content: flex-start;
+    margin: 2rem 0 0 0;
+  }
+  /*------------------------------
 	Contact Styles
 	------------------------------*/
-	.contact-info {
-		max-width: 68.438rem;
-		margin: 0 auto;
-	}
+  .contact-info {
+    max-width: 68.438rem;
+    margin: 0 auto;
+  }
 }
