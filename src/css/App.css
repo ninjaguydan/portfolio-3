@@ -45,6 +45,12 @@ Main Logo Styles
   background-color: var(--gray1);
   border: 0.25rem solid var(--gray2);
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#dt-anim svg {
+  width: 7rem !important;
 }
 /*------------------------------
 Menu Button Styles

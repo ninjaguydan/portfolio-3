@@ -10,8 +10,9 @@ const Project = (props) => {
         <div className="desc">
           <div className="icons">
             {props.icons.length !== 0 &&
-              props.icons.map((icon) => (
+              props.icons.map((icon, index) => (
                 <img
+                  key={index + 1}
                   src={icon}
                   alt={`${icon} logo`}
                 />

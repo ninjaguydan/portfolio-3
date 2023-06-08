@@ -1,20 +1,23 @@
-import logo from '../media/images/dt_logo.svg'
+import { useEffect, useState } from "react";
+import { useLottie } from "lottie-react";
+
+import animationData from "../lottie/dt.json";
 
 const Logo = () => {
-	// let animationContainer = useRef(null)
-	// useEffect(() => {
-	// 	lottie.loadAnimation({
-	// 		container: animationContainer.current,
-	// 		renderer: 'svg',
-	// 		loop: false,
-	// 		autoplay: true,
-	// 		animationData: animation,
-	// 	})
-	// }, [])
+  const [options, setOptions] = useState({});
+  const { View: lottie } = useLottie(options);
 
-	return (
-		<img src={logo} id="dt-anim" alt="DT logo" />
-	)
-}
+  useEffect(() => {
+    setTimeout(() => {
+      setOptions({
+        loop: false,
+        autoplay: true,
+        animationData: animationData,
+      });
+    }, 750);
+  }, []);
 
-export default Logo
+  return <div id="dt-anim">{lottie}</div>;
+};
+
+export default Logo;
