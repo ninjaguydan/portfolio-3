@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-3/static/css/main.b1056140.css",
-    "main.js": "/portfolio-3/static/js/main.a58a323c.js",
+    "main.css": "/portfolio-3/static/css/main.4926b661.css",
+    "main.js": "/portfolio-3/static/js/main.8219d906.js",
     "static/media/DT.png": "/portfolio-3/static/media/DT.ec121654e774bb89f739.png",
     "static/media/Dexapp.png": "/portfolio-3/static/media/Dexapp.97f004329ee724eba04e.png",
     "static/media/9_tmnt.png": "/portfolio-3/static/media/9_tmnt.d77f95a3bbf62f28d5ff.png",
@@ -21,7 +21,6 @@
     "static/media/me.png": "/portfolio-3/static/media/me.f0b2fd4f1fe92210733c.png",
     "static/media/EDDIT.png": "/portfolio-3/static/media/EDDIT.fcf5544c0ad7689a8b90.png",
     "static/media/daniel_thompson_resume_v20.pdf": "/portfolio-3/static/media/daniel_thompson_resume_v20.684480507e0e630f7a95.pdf",
-    "static/media/dt_logo.svg": "/portfolio-3/static/media/dt_logo.22272f627b6f67dfeafe7fec050c697f.svg",
     "static/media/makeswift.svg": "/portfolio-3/static/media/makeswift.5c8854b98d4809815b34c945a855ab94.svg",
     "static/media/react.svg": "/portfolio-3/static/media/react.e558fd1384417bd287500a95b7a46eb7.svg",
     "static/media/gh.svg": "/portfolio-3/static/media/gh.465ad16ba0e6c69585c163bb9ce99111.svg",
@@ -32,11 +31,11 @@
     "static/media/ig.svg": "/portfolio-3/static/media/ig.94440ef54c9b5caf5bd62d45bfa42c11.svg",
     "static/media/tw.svg": "/portfolio-3/static/media/tw.2b29dbc4535dd3b7eed93c647af6d685.svg",
     "static/media/angular.svg": "/portfolio-3/static/media/angular.f16bdef50697191ce0c0161fa4b0581f.svg",
-    "main.b1056140.css.map": "/portfolio-3/static/css/main.b1056140.css.map",
-    "main.a58a323c.js.map": "/portfolio-3/static/js/main.a58a323c.js.map"
+    "main.4926b661.css.map": "/portfolio-3/static/css/main.4926b661.css.map",
+    "main.8219d906.js.map": "/portfolio-3/static/js/main.8219d906.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1056140.css",
-    "static/js/main.a58a323c.js"
+    "static/css/main.4926b661.css",
+    "static/js/main.8219d906.js"
   ]
 }
