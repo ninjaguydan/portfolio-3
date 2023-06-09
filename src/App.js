@@ -10,8 +10,12 @@ import SiteContent from "./Components/SiteContent";
 
 function App() {
   const [isActive, setActive] = useState("false");
+  const [key, setKey] = useState(1);
   function menuToggle() {
     setActive(!isActive);
+  }
+  function remountLogo() {
+    setKey(key + 1);
   }
 
   return (
@@ -24,7 +28,10 @@ function App() {
         isActive={isActive}
         menuToggle={menuToggle}
       />
-      <Logo />
+      <Logo
+        key={key}
+        handleClick={{ func: remountLogo, mount: key }}
+      />
       <section className="gray nav" />
       <header id="projects">
         <h1>Daniel Thompson</h1>

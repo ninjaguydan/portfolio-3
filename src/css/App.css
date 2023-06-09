@@ -48,6 +48,7 @@ Main Logo Styles
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #dt-anim svg {
   width: 7rem !important;

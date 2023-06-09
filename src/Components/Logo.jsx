@@ -3,21 +3,30 @@ import { useLottie } from "lottie-react";
 
 import animationData from "../lottie/dt.json";
 
-const Logo = () => {
+const Logo = ({ handleClick }) => {
   const [options, setOptions] = useState({});
   const { View: lottie } = useLottie(options);
 
   useEffect(() => {
-    setTimeout(() => {
-      setOptions({
-        loop: false,
-        autoplay: true,
-        animationData: animationData,
-      });
-    }, 750);
+    setTimeout(
+      () => {
+        setOptions({
+          loop: false,
+          autoplay: true,
+          animationData: animationData,
+        });
+      },
+      handleClick.mount === 1 ? 750 : 0
+    );
   }, []);
 
-  return <div id="dt-anim">{lottie}</div>;
+  return (
+    <button
+      id="dt-anim"
+      onClick={handleClick.func}>
+      {lottie}
+    </button>
+  );
 };
 
 export default Logo;

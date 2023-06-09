@@ -15,8 +15,8 @@ const About = () => {
           <div className="about-txt">
             <p>
               I'm a Front End Engineer from Jackson, MS with an extensive background in art and design. Not only do I enjoy
-              building things, but I enjoy making them look good! Skilled in solving problems with HTML, CSS, Javascript,
-              Python, Django and React with an emphasis on accessibility. I think understanding the human experience is
+              building things, but I enjoy making them look good! Skilled in solving problems with semantic HTML, CSS,
+              Typescript, React and Figma with an emphasis on accessibility. I think understanding the human experience is
               essential for creating useful and effective products that make life easier for everyone, and I enjoy using my
               skill-set to empower people to accomplish their goals.
             </p>
