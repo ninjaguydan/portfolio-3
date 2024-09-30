@@ -183,18 +183,19 @@ article p {
 /*------------------------------
 Illustration Gallery Styles
 ------------------------------*/
-article .img-grid {
+.img-grid {
+  margin-top: 1rem !important;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1rem;
   row-gap: 1rem;
 }
-article .img-grid img {
+.img-grid img {
   margin: 0;
   filter: grayscale(1);
   transition: transform 0.2s;
 }
-article .img-grid img:hover {
+.img-grid img:hover {
   transform: scale(1.0625);
   filter: none;
 }
@@ -410,7 +411,7 @@ Animation
   /*------------------------------
 	Illustration Gallery Styles
 	------------------------------*/
-  article .img-grid {
+  .img-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 36.188rem;
     margin: 0 auto;
@@ -496,7 +497,7 @@ Animation
   /*------------------------------
 	Illustration Gallery Styles
 	------------------------------*/
-  article .img-grid {
+  .img-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     max-width: 68.438rem;
     margin: 0 auto;

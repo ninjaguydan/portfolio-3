@@ -20,22 +20,13 @@ function App() {
 
   return (
     <>
-      <MenuBtn
-        menuToggle={menuToggle}
-        isActive={isActive}
-      />
-      <Menu
-        isActive={isActive}
-        menuToggle={menuToggle}
-      />
-      <Logo
-        key={key}
-        handleClick={{ func: remountLogo, mount: key }}
-      />
+      <MenuBtn menuToggle={menuToggle} isActive={isActive} />
+      <Menu isActive={isActive} menuToggle={menuToggle} />
+      <Logo key={key} handleClick={{ func: remountLogo, mount: key }} />
       <section className="gray nav" />
       <header id="projects">
         <h1>Daniel Thompson</h1>
-        <h2>Front End Engineer &#9733; UX Designer</h2>
+        <h2>UX Engineer &#9733; UX Designer</h2>
       </header>
       <SiteContent />
       <Frame />
